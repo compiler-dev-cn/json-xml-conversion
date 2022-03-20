@@ -15,7 +15,7 @@ package com.cdc.jxc.lex;
 %unicode
 %class XmlLexerImpl
 %public
-%function nextToken
+%function nextTokenType
 %type ITokenType
 %line
 %column
