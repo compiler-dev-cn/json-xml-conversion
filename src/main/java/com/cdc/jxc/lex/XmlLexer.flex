@@ -15,7 +15,7 @@ package com.cdc.jxc.lex;
 %unicode
 %class XmlLexerImpl
 %public
-%function nextTokenType
+%function nextToken
 %type ITokenType
 %line
 %column
@@ -41,6 +41,7 @@ NAME = ({ID}:)?{ID}
 "<!--" {yybegin(COMMENT); return XmlTokenType.COMMENT_START_TAG;}
 "<" {yybegin(TAG); return XmlTokenType.ELEMENT_START_TAG;}
 "</" {yybegin(END_TAG); return XmlTokenType.ELEMENT_END_START_TAG;}
+[^{WS}<?!/]+[^<?!/]*[^{WS}<?!/]+ {return XmlTokenType.INITIAL_CHARACTER;}
 }
 <PI> {
 "?>" {yybegin(YYINITIAL); return XmlTokenType.PI_END_TAG;}
@@ -63,7 +64,7 @@ NAME = ({ID}:)?{ID}
 ">" {yybegin(YYINITIAL); return XmlTokenType.ELEMENT_END_TAG;}
 {NAME} {return XmlTokenType.NAME;}
 "=" {return XmlTokenType.EQ;}
-\"[^]\" {return XmlTokenType.ATTRIBUTE_VALUE; }
+\"[^]*\" {return XmlTokenType.ATTRIBUTE_VALUE; }
 }
 
 <END_TAG> {

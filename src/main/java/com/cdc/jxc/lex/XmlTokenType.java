@@ -14,6 +14,7 @@ public enum XmlTokenType implements ITokenType {
 
     NAME("name"),
     ATTRIBUTE_VALUE("attribute_value"),
+    INITIAL_CHARACTER("initial_character"),
 
     EQ("eq");
 

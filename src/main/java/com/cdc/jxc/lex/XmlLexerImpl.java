@@ -97,12 +97,13 @@ public class XmlLexerImpl {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\6\0\1\1\1\2\1\1\1\0\1\1\2\0\1\3"+
-    "\1\4\1\0\1\5\1\6\1\0\1\7\1\10\1\11"+
-    "\1\0\1\12\4\0\1\13\1\4\1\14\1\6\1\15";
+    "\7\0\1\1\1\2\1\1\1\0\1\1\2\0\1\3"+
+    "\1\4\1\0\1\5\1\6\1\7\1\0\1\10\1\11"+
+    "\1\12\1\0\1\13\1\0\1\14\2\0\1\15\1\4"+
+    "\1\6\1\16";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[33];
+    int [] result = new int[34];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -129,12 +130,12 @@ public class XmlLexerImpl {
   private static final String ZZ_ROWMAP_PACKED_0 =
     "\0\0\0\15\0\32\0\47\0\64\0\101\0\116\0\133"+
     "\0\150\0\165\0\202\0\217\0\234\0\251\0\266\0\303"+
-    "\0\251\0\320\0\335\0\251\0\251\0\251\0\352\0\251"+
-    "\0\367\0\u0104\0\u0111\0\u011e\0\251\0\u012b\0\251\0\u0138"+
-    "\0\251";
+    "\0\320\0\266\0\335\0\116\0\352\0\266\0\266\0\266"+
+    "\0\367\0\266\0\u0104\0\320\0\u0111\0\u011e\0\266\0\u012b"+
+    "\0\u0138\0\266";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[33];
+    int [] result = new int[34];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -157,18 +158,20 @@ public class XmlLexerImpl {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\0\1\7\6\0\1\10\4\0\12\11\1\0\1\12"+
-    "\1\11\4\13\1\14\5\13\1\0\2\13\1\0\1\7"+
-    "\3\0\1\15\4\0\1\16\1\0\1\17\1\0\1\7"+
-    "\1\0\1\20\1\0\1\15\3\0\1\21\1\16\1\0"+
-    "\1\22\1\0\1\7\10\0\1\16\1\0\1\22\1\0"+
-    "\1\7\15\0\1\23\2\0\1\24\5\0\1\25\1\0"+
-    "\12\11\2\0\1\11\12\0\1\26\2\0\4\13\1\0"+
-    "\5\13\1\0\2\13\4\0\1\27\22\0\1\30\25\0"+
-    "\1\17\1\31\4\0\1\17\15\32\6\0\1\22\1\33"+
-    "\4\0\1\22\4\0\1\34\22\0\1\35\16\0\1\36"+
-    "\3\0\1\37\25\0\1\40\4\0\1\41\16\0\1\36"+
-    "\5\0\1\36\6\0\1\40\5\0\1\40";
+    "\1\7\1\10\1\0\2\7\1\0\2\7\1\11\2\7"+
+    "\1\0\1\7\12\12\1\0\1\13\1\12\4\14\1\15"+
+    "\5\14\1\0\2\14\1\0\1\10\3\0\1\16\4\0"+
+    "\1\17\1\0\1\20\1\0\1\10\1\0\1\21\1\0"+
+    "\1\16\3\0\1\22\1\17\1\0\1\23\1\0\1\10"+
+    "\10\0\1\17\1\0\1\23\1\24\1\7\1\0\2\24"+
+    "\1\0\2\24\1\0\2\24\1\0\1\24\1\0\1\10"+
+    "\15\0\1\25\2\0\1\26\5\0\1\27\1\0\12\12"+
+    "\2\0\1\12\12\0\1\30\2\0\4\14\1\0\5\14"+
+    "\1\0\2\14\4\0\1\31\22\0\1\32\25\0\1\20"+
+    "\1\33\4\0\1\20\3\21\1\34\11\21\6\0\1\23"+
+    "\1\35\4\0\1\23\4\0\1\36\22\0\1\37\16\0"+
+    "\1\40\14\0\1\41\4\0\1\42\16\0\1\40\5\0"+
+    "\1\40\6\0\1\41\5\0\1\41";
 
   private static int [] zzUnpackTrans() {
     int [] result = new int[325];
@@ -214,12 +217,12 @@ public class XmlLexerImpl {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\6\0\3\1\1\0\1\1\2\0\1\11\1\1\1\0"+
-    "\1\11\1\1\1\0\3\11\1\0\1\11\4\0\1\11"+
-    "\1\1\1\11\1\1\1\11";
+    "\7\0\3\1\1\0\1\1\2\0\1\11\1\1\1\0"+
+    "\1\11\2\1\1\0\3\11\1\0\1\11\1\0\1\1"+
+    "\2\0\1\11\2\1\1\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[33];
+    int [] result = new int[34];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -702,67 +705,72 @@ public class XmlLexerImpl {
             { return CommonTokenType.SKIP;
             }
             // fall through
-          case 14: break;
+          case 15: break;
           case 2:
             { yybegin(TAG); return XmlTokenType.ELEMENT_START_TAG;
             }
             // fall through
-          case 15: break;
+          case 16: break;
           case 3:
             { yybegin(YYINITIAL); return XmlTokenType.ELEMENT_END_TAG;
             }
             // fall through
-          case 16: break;
+          case 17: break;
           case 4:
             { yybegin(ATTR); return XmlTokenType.NAME;
             }
             // fall through
-          case 17: break;
+          case 18: break;
           case 5:
             { return XmlTokenType.EQ;
             }
             // fall through
-          case 18: break;
+          case 19: break;
           case 6:
             { return XmlTokenType.NAME;
             }
             // fall through
-          case 19: break;
-          case 7:
-            { yybegin(END_TAG); return XmlTokenType.ELEMENT_END_START_TAG;
-            }
-            // fall through
           case 20: break;
-          case 8:
-            { yybegin(PI); return XmlTokenType.PI_START_TAG;
+          case 7:
+            { return XmlTokenType.INITIAL_CHARACTER;
             }
             // fall through
           case 21: break;
-          case 9:
-            { yybegin(YYINITIAL); return XmlTokenType.PI_END_TAG;
+          case 8:
+            { yybegin(END_TAG); return XmlTokenType.ELEMENT_END_START_TAG;
             }
             // fall through
           case 22: break;
-          case 10:
-            { yybegin(YYINITIAL); return XmlTokenType.ELEMENT_EMPTY_END_TAG;
+          case 9:
+            { yybegin(PI); return XmlTokenType.PI_START_TAG;
             }
             // fall through
           case 23: break;
-          case 11:
-            { yybegin(YYINITIAL); return XmlTokenType.COMMENT_END_TAG;
+          case 10:
+            { yybegin(YYINITIAL); return XmlTokenType.PI_END_TAG;
             }
             // fall through
           case 24: break;
+          case 11:
+            { yybegin(YYINITIAL); return XmlTokenType.ELEMENT_EMPTY_END_TAG;
+            }
+            // fall through
+          case 25: break;
           case 12:
             { return XmlTokenType.ATTRIBUTE_VALUE;
             }
             // fall through
-          case 25: break;
+          case 26: break;
           case 13:
+            { yybegin(YYINITIAL); return XmlTokenType.COMMENT_END_TAG;
+            }
+            // fall through
+          case 27: break;
+          case 14:
             { yybegin(COMMENT); return XmlTokenType.COMMENT_START_TAG;
             }
             // fall through
-          case 26: break;
+          case 28: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

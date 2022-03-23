@@ -2,6 +2,6 @@ package com.cdc.jxc.lex;
 
 public interface ITokenType {
 
-    String name();
+    String getName();
 
 }

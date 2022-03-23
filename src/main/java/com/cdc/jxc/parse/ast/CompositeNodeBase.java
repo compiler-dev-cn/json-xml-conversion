@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeNodeBase implements CompositeASTNode {
+public abstract class CompositeNodeBase implements CompositeASTNode {
 
     private final List<ASTNode> mChildren = new ArrayList<>();
 

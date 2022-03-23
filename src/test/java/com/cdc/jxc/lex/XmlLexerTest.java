@@ -20,7 +20,7 @@ public class XmlLexerTest {
                 return;
             }
             System.out.println(String.format("{%s, %s, %d, %d}",
-                    type.name(),
+                    type.getName(),
                     impl.yytext(),
                     impl.yyline(),
                     impl.yycolumn()));
